@@ -1,6 +1,8 @@
+
+
 #content {
     color: #000000;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -10,6 +12,6 @@ img {
     margin: 0 0 1em 1em;
     padding: 0;
     border: 0;
-    border-radius: 20%; /* Make the profile picture circular */
+    border-radius: 10%; /* Make the profile picture circular */
     max-width: 150px; /* Set the maximum width for the image */
 }
