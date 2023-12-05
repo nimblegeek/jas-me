@@ -18,5 +18,5 @@ img {
     padding: 0;
     border: 0;
     border-radius: 10%; /* Make the profile picture circular */
-    max-width: 150px; /* Set the maximum width for the image */
+    max-width: 200px; /* Set the maximum width for the image */
 }
