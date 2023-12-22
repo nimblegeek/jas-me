@@ -1,90 +1,100 @@
-
 /*refactor the following code and remove the unnecessary code*/
 
 html {
-    display: block;
+  display: block;
 }
 
 
 body {
-    margin: 0;
-    max-width: 800px; /* or the width you prefer */
-    padding: 0 20px; /* Adjust the padding as needed */
-    font-size: 18px;
-    line-height: 26px;
-    font-family: 'Merriweather', serif;
-    background-color: #f6f5ed;
-    color: #484848;
-    word-wrap: break-word;
+  margin: 0;
+  max-width: 800px;
+  /* or the width you prefer */
+  padding: 0 20px;
+  /* Adjust the padding as needed */
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Merriweather', serif;
+  background-color: #f6f5ed;
+  color: #484848;
+  word-wrap: break-word;
 
-    margin: 0 auto; /* Center the body */
+  margin: 0 auto;
+  /* Center the body */
 }
 
 article {
-    clear: both; /* This will prevent the article from floating next to the avatar image */
-    display: block;
-    max-width: 620px;
+  clear: both;
+  /* This will prevent the article from floating next to the avatar image */
+  display: block;
+  max-width: 620px;
 }
 
 a {
-    color: #5215b0;
-    text-decoration: none;
+  color: #5e15cb;
+  text-decoration: none;
 }
 
 header {
-    margin-top: 30px;
-    margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .avatar {
-    display: block;
-    overflow: hidden;
-    float: left;
-    margin-right: 20px; /* Add space between the image and text */
-    margin-left: 5px; /* Adjust this value as needed to align the image with the text */
-    border-radius: 50%;
-    vertical-align: top;
-    aspect-ratio: auto 90 / 100;
-    width: 100px; /* Set width */
-    height: 90px; /* Set height */
-    border: 2px solid #333;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  /* Add space between the image and text */
+  margin-left: 5px;
+  /* Adjust this value as needed to align the image with the text */
+  border-radius: 50%;
+  vertical-align: top;
+  aspect-ratio: auto 90 / 100;
+  width: 100px;
+  /* Set width */
+  height: 90px;
+  /* Set height */
+  border: 2px solid #333;
 }
 
 h1 {
-    font-size: 46px;
-    line-height: 42px;
-    font-weight: normal;
-    margin-bottom: 20px;
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  font-size: 46px;
+  line-height: 42px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 
 }
 
 h2 {
-    margin-top: 30px; /* Increased top margin for more space */
-    margin-bottom: 5px; /* Decreased bottom margin for less space */
-    font-size: 24px;
-    font-weight: normal;
+  margin-top: 30px;
+  /* Increased top margin for more space */
+  margin-bottom: 5px;
+  /* Decreased bottom margin for less space */
+  font-size: 24px;
+  font-weight: normal;
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 5px; /* Increased top margin for more space */
-    margin-bottom: 10px; /* Decreased bottom margin for less space */
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 5px;
+  /* Increased top margin for more space */
+  margin-bottom: 10px;
+  /* Decreased bottom margin for less space */
 }
 
 p.header {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 90px; /* Adjust as needed to space between the header paragraph and the article */
-    max-width: 620px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  /* Adjust as needed to space between the header paragraph and the article */
+  max-width: 620px;
 }
-
-
