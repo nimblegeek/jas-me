@@ -1,26 +1,24 @@
+/* Base styles that apply to mobile and up */
 html {
   display: block;
 }
 
-
 body {
   margin: auto;
-  display: block;
-  max-width: 800px;
   padding: 0 20px;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px; /* Start with a smaller base font size for mobile */
+  line-height: 1.6;
   font-family: 'Merriweather', serif;
-  width: 580px;
   background-color: #f6f5ed;
   color: #484848;
   word-wrap: break-word;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 article {
   clear: both;
   display: block;
-  max-width: 620px;
 }
 
 a {
@@ -47,40 +45,27 @@ header {
 }
 
 h1 {
-  font-size: 46px;
-  line-height: 42px;
+  font-size: 2.875rem; /* 46px scaled down for mobile */
+  line-height: 1.2;
   font-weight: bold;
   margin-bottom: 20px;
-  display: block;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-
 }
 
 h2 {
   margin-top: 30px;
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 1.75rem; /* 28px scaled down for mobile */
   font-weight: normal;
 }
 
 p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 p.header {
-  display: block;
   margin-top: 20px;
   margin-bottom: 70px;
-  max-width: 620px;
 }
 
 img {
@@ -88,6 +73,35 @@ img {
   width: auto;
   height: auto;
   margin-top: 8px;
-  overflow-clip-margin: content-box;
-  overflow: clip;
 }
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  body {
+    padding: 0 20px; /* Adjust padding as needed */
+    font-size: 18px; /* Back to original font size */
+    max-width: 800px; /* Max width as in the original design */
+  }
+
+  h1 {
+    font-size: 46px; /* Original font size */
+  }
+
+  h2 {
+    font-size: 28px; /* Original font size */
+  }
+
+  /* Ensure article width matches body width */
+  article, p.header {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .avatar {
+    width: 95px; /* Reset to original width if changed for mobile */
+    height: 90px; /* Reset to original height if changed for mobile */
+  }
+}
+
+/* Consider adding more breakpoints as needed for tablet and desktop sizes */
