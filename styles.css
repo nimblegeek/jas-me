@@ -82,3 +82,10 @@ p.header {
   margin-bottom: 70px;
   max-width: 620px;
 }
+
+img {
+  width: 540px;
+  height: 540px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
