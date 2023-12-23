@@ -6,7 +6,7 @@ html {
 body {
   margin: auto;
   padding: 0 20px;
-  font-size: 16px; /* Start with a smaller base font size for mobile */
+  font-size: 18px; /* Start with a smaller base font size for mobile */
   line-height: 1.6;
   font-family: 'Merriweather', serif;
   background-color: #f6f5ed;
