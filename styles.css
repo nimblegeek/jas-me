@@ -4,28 +4,17 @@ html {
 
 
 body {
-  margin: 0;
-  body {
+  margin: auto;
+  display: block;
   max-width: 800px;
   padding: 0 20px;
   font-size: 18px;
   line-height: 26px;
   font-family: 'Merriweather', serif;
+  width: 580px;
   background-color: #f6f5ed;
   color: #484848;
   word-wrap: break-word;
-}
-  
-max-width: 800px;
-  padding: 0 20px;
-  font-size: 18px;
-  line-height: 26px;
-  font-family: 'Merriweather', serif;
-  background-color: #f6f5ed;
-  color: #484848;
-  word-wrap: break-word;
-
-  margin: 0 auto;
 }
 
 article {
@@ -95,6 +84,9 @@ p.header {
 }
 
 img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
   margin-top: 8px;
   overflow-clip-margin: content-box;
   overflow: clip;
