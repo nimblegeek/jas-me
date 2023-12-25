@@ -35,6 +35,14 @@ article {
   line-height: 1.6;
 }
 
+article h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 40px;
+  /* Same as h2's margin-top */
+  margin-bottom: 1px;
+  /* Same as h2's margin-bottom */
+}
+
 /* Images within articles */
 article img {
   width: 100%;
@@ -70,14 +78,13 @@ a {
     margin-top: 0;
   }
 
-  /* Make adjustments to h2 and paragraph spacing */
   h2 {
     margin-top: 20px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
   }
 
   p {
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
   }
 }
 
@@ -86,6 +93,19 @@ a {
   body {
     max-width: 620px;
     /* Set maximum width for desktop to 620px */
+  }
+
+  article h2,
+  article h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 1px;
+  }
+
+  article p {
+    margin-top: 1px;
+    /* This ensures the space between h2/h3 and p is consistent */
   }
 
   h1 {
@@ -109,12 +129,6 @@ a {
     clear: both;
   }
 
-  article h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 5px;
-  }
 
   /* Other styles as needed */
 }
