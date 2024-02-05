@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f6f5ed;
+  color: #484848;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 2.450rem;
+  line-height: 2.625rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 130px;
+  height: 120px;
+  border: 3px solid #333;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+p.header {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Adjustments for article content */
+article {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+article h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 40px;
+  /* Same as h2's margin-top */
+  margin-bottom: 1px;
+  /* Same as h2's margin-bottom */
+}
+
+/* Images within articles */
+article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Styles for links */
+a {
+  color: #bb0707;
+  text-decoration: none;
+}
+
+/* For mobile view */
+@media screen and (max-width: 580px) {
+
+  header h1,
+  header .header {
+    text-align: left;
+  }
+
+  header .avatar {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    float: left;
+  }
+
+  .header {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 0.1rem;
+  }
+
+  p {
+    margin-top: 0.1rem;
+  }
+}
+
+/* Desktop and above styles */
+@media screen and (min-width: 581px) {
+  body {
+    max-width: 620px;
+    /* Set maximum width for desktop to 620px */
+  }
+
+  article h2,
+  article h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 1px;
+  }
+
+  article p {
+    margin-top: 1px;
+    /* This ensures the space between h2/h3 and p is consistent */
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .avatar {
+    float: left;
+    margin-right: 20px;
+  }
+
+  p.header {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 180px);
+    margin-top: 0;
+  }
+
+  .header+article {
+    clear: both;
+  }
+
+
+  /* Other styles as needed */
+}
+
+/* Grid Layout for Images */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Creates a 3-column grid */
+  grid-gap: 10px;
+  /* Adjust gap size as needed */
+  max-width: 620px;
+  /* Using the max width specified in your CSS */
+  margin: 0 auto;
+  /* Center the grid horizontally */
+  padding: 20px;
+  /* Adds some space around the grid */
+}
+
+.grid-item img {
+  width: 100%;
+  /* Ensure the image fills the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove any extra space below the image */
+}
+
+/* Adjustments for mobile view */
+@media screen and (max-width: 580px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Switches to a 2-column grid for smaller screens */
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Continue with your existing media queries and styles */
+/* ... */
