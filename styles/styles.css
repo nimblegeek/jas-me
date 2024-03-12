@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
 }
 
-header h1 {
+header h1 p {
   font-family: 'Lora', serif;
   font-weight: 600;
   font-size: 2.450rem;
@@ -27,6 +27,7 @@ header h1 {
 p.header {
   text-align: center;
   font-size: 18px;
+  line-height: 1.6;
 }
 
 /* Adjustments for article content */
