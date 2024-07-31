@@ -108,6 +108,17 @@ a {
     /* Set maximum width for desktop to 620px */
   }
 
+  /* Align the a classes in dayone.html */
+  .back-to-essays {
+    justify-content: left;
+    /* Left-align links with class essaylist */
+  }
+
+  .home-link {
+    justify-content: right;
+    /* Right-align links with class home */
+  }
+
   article h2,
   article h3 {
     font-family: 'Merriweather', serif;
