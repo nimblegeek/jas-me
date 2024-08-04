@@ -7,6 +7,7 @@ nav {
 /* Global Styles */
 
 nav ul li {
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   display: inline-block;
   unicode-bidi: isolate;
@@ -20,7 +21,6 @@ body {
   font-family: 'Merriweather', serif;
   background-color: #f6f5ed;
   color: #484848;
-  margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -128,7 +128,7 @@ a {
 
   h1 {
     text-align: left;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .avatar {
