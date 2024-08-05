@@ -42,7 +42,7 @@ header h1 p {
 }
 
 p.header {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   line-height: 1.6;
 }
@@ -78,15 +78,25 @@ a {
 /* For mobile view */
 @media screen and (max-width: 580px) {
 
-  header h1,
+  h1,
   header .header {
     text-align: left;
+    font-size: 22px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+    /* Align items horizontally */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   header .avatar {
     width: 120px;
     height: 110px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: 20px;
     float: left;
@@ -99,6 +109,7 @@ a {
   h2 {
     margin-top: 20px;
     margin-bottom: 0.1rem;
+    font-size: 22px;
   }
 
   p {
@@ -111,6 +122,15 @@ a {
   body {
     max-width: 620px;
     /* Set maximum width for desktop to 620px */
+  }
+
+  header .avatar {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    float: left;
   }
 
   article h2,
@@ -128,7 +148,7 @@ a {
 
   h1 {
     text-align: left;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .avatar {
