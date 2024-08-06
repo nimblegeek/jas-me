@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: #bb0707;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover,
+a:active,
+a:focus {
+  border-bottom: 1px solid #4183C4;
+}
+
+header {
+  font-family: Questrial;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.index {
+  margin-left: 70px;
+}
+
+@media all and (max-width : 720px) {
+  header {
+    margin-left: 18px;
+  }
+
+  .index {
+    margin-left: 30px;
+  }
+}
+
+.index nav a {
+  margin-right: 10px;
+}
+
+.postItem {
+  width: 720px;
+  margin: 50px auto 50px;
+}
+
+.post-seperator {
+  width: 800px;
+  margin-top: 20px;
+  margin-left: -40px;
+  border-top: 1px solid #ececec;
+}
+
+.postItem:last-child .post-seperator {
+  display: none;
+}
+
+.postItem img {
+  display: block;
+  margin: 50px auto;
+  max-width: 100%;
+}
+
+.postItem img+em {
+  display: block;
+  text-align: center;
+  margin-top: -40px;
+  font-size: 18px;
+}
+
+@media all and (max-width : 800px) {
+  .post-seperator {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+
+.postTitle a {
+  font-size: 43px;
+  line-height: 1.15;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.postTitle a:hover {
+  color: #4183C4
+}
+
+.postAuthor {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 15px;
+  color: #807F7F;
+}
+
+.postContent {
+  font-family: "Miller Text Rom", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 45px;
+  color: rgb(93, 91, 91);
+}
+
+.postContent h1,
+.postContent h2,
+.postContent h3,
+.postContent h4,
+.postContent h5 {
+  color: rgb(76, 75, 75);
+  font-family: Lato;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.postContent h1 {
+  font-size: 30px;
+  color: rgb(63, 64, 63);
+  margin-top: 20px;
+}
+
+.postContent h2 {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.postContent h3 {
+  font-size: 24px;
+}
+
+.postContent h4 {
+  font-size: 22px;
+}
+
+.postContent h5 {
+  font-size: 20px;
+}
+
+.postContent p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.postContent ul {
+  padding-left: 5px;
+}
+
+.postContent ol {
+  padding-left: 25px
+}
+
+.postContent ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.postContent ul,
+.postContent ol {
+  margin: 20px 0;
+}
+
+
+@media all and (max-width : 720px) {
+  .postItem {
+    width: auto;
+    margin: 50px 18px;
+  }
+
+  .postTitle a {
+    font-size: 36px;
+  }
+
+  .postContent {
+    font-size: 16px;
+  }
+
+  .postAuthor {
+    font-size: 16px;
+  }
+
+  .postContent h1 {
+    font-size: 28px;
+  }
+
+  .postContent h2 {
+    font-size: 24px;
+  }
+
+  .postContent h3 {
+    font-size: 22px;
+  }
+
+  .postContent h4 {
+    font-size: 20px;
+  }
+
+  .postContent h5 {
+    font-size: 18px;
+  }
+}
+
+/* Nested */
+.postContent ul>li>ul>li:before {
+  font-size: 20px;
+  line-height: 1.6;
+  content: "◦ ";
+  color: #807F7F;
+}
+
+.postContent ul>li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+.postContent ol>li {
+  text-indent: 0;
+}
+
+.postContent li>ul,
+.postContent li>ol {
+  margin-left: 10px;
+}
+
+.postContent pre {
+  overflow: auto;
+  border: 1px solid #e1e1e8;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.postContent pre code {
+  display: block;
+  border-bottom: 1px solid #eee;
+  overflow-x: scroll;
+}
+
+.postContent code,
+.postContent pre {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+.postContent pre code {
+  color: #000;
+  border: none;
+}
+
+.postContent blockquote {
+  font-style: italic;
+  border-left: 3px solid black;
+  padding-left: 20px;
+}
+
+.readMore {
+  margin-bottom: 20px;
+}
+
+.essayList {
+  margin-top: 30px;
+}
+
+.replit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(17, 28, 49);
+  padding: 10px;
+}
+
+.replit img {
+  width: 50px;
+}
