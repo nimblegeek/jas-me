@@ -37,8 +37,11 @@ app.use(
 );
 
 app.use(
-  "/amasad",
-  express.static(path.join(__dirname, "public/images/amasad.jpg"), staticOpts),
+  "/iamjas",
+  express.static(
+    path.join(__dirname, "public/images/frontview.jpg"),
+    staticOpts,
+  ),
 );
 
 app.use(
